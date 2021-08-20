@@ -25,14 +25,16 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
-
+    .map is a method that converts data and returns it in a new array. It does this all while leaving the original data unchanged. For example if we needed just
+    a the list of names contained inside an array of objects. We could single out just the objects names, put them in an array and then return that array containing the names. .reduce is different because it does not return a new array. Instead it returns a single value, typically it is used to return a sum of values. This can be used for anything. An example of this would be if we needed the total sum of numbers contained inside of an array using .reduce we could take that array and add each number to return the single sum of all the numbers. .filter differs and has some simularities to the other methods. It is similar to .map in that it returns a new array without changing the original data. It differes in that it is much more like a conditional. If the filter meets the conditional requirements and is true then the returning array will contain that data however if it is false it will not be included in the new array. This could be used on an array of names and if we needed just the array of names that have 6 or more characters in it we could use the filter method to get just the longer names containes in the list. 
 2. Explain the difference between a callback and a higher order function.
-
+    a callback function is a function that is passed into other functions as an argument. A higher order function would be the functions in this scenerio that recieves a callback function or other functions. 
 3. Explain what a closure is.
-
+    A closure is an occurance that happens within our code when a nested inner function reaches outside of itself and grabs information from the outer function. The closure happens inside of the innerfunction. 
 4. Describe the four principles of the 'this' keyword.
-
+    One of the four principles of the this keyword would be called implicit binding. Implicit binding applies to objects that contain methods, when this method is invoked everything to the left of the dot is what is implied. Another principle is window binding. Window binding occurs when we havent given the 'this' keyword and connotation, in this instance if we were to return the data it would return the global object without any specification. Third is explicit binding this happens when we tell a function to .call .apply or .bind. each of these principles specifically tell the functions what to do. Last is new binding this happens when a function is invoked with a new keyword the this keyword inside of a function is bound to the new object being contructed then the function is invoked as a constuctor using the new keyword, this alludes to the new object being created. 
 5. Why do we need super() in an extended class?
+    we need super because it will refer the parent class. super will call the constructor of the parent and access the prarents properties as well as methods. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
